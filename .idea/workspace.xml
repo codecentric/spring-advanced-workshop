@@ -47,7 +47,6 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/schwilski/dev/spring-advanced-workshop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -98,7 +97,8 @@
       <workItem from="1727688429986" duration="2000" />
       <workItem from="1727853812336" duration="8061000" />
       <workItem from="1727994536535" duration="218000" />
-      <workItem from="1727994791734" duration="431000" />
+      <workItem from="1727994791734" duration="803000" />
+      <workItem from="1727995677984" duration="48000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
