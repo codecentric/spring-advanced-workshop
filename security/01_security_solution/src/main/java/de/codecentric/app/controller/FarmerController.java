@@ -1,5 +1,6 @@
 package de.codecentric.app.controller;
 
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,6 +31,8 @@ public class FarmerController {
     }
 
     @RequestMapping("/status")
+    // Lösung Bonus 3
+    @Secured("ROLE_USER")
     public String status() {
         return "status";
     }
