@@ -1,6 +1,6 @@
 package de.codecentric.app;
 
-import de.codecentric.app.config.Config;
+import de.codecentric.app.configuration.Config;
 import de.codecentric.app.model.Farmer;
 import de.codecentric.app.service.FarmerService;
 import org.junit.jupiter.api.Test;
@@ -17,7 +17,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(loader = AnnotationConfigContextLoader.class, classes = Config.class)
-@JdbcTest
 class ApplicationTest {
 
     @Autowired
@@ -34,7 +33,7 @@ class ApplicationTest {
     public void testFindFarmerByLastname(){
         Farmer farmer = this.farmerService.findFarmerByLastName("Bauer");
         assertThat(farmer).isNotNull();
-        assertThat(farmer.getFirstName()).isEqualTo("Benjamin");
+        assertThat(farmer.getFirstname()).isEqualTo("Benjamin");
     }
 
 

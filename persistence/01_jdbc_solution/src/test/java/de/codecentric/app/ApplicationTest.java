@@ -1,6 +1,6 @@
 package de.codecentric.app;
 
-import de.codecentric.app.configuration.Configuration;
+import de.codecentric.app.configuration.Config;
 import de.codecentric.app.model.Farmer;
 import de.codecentric.app.service.FarmerService;
 import org.junit.jupiter.api.Test;
@@ -16,7 +16,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(loader = AnnotationConfigContextLoader.class, classes = Configuration.class)
+@ContextConfiguration(loader = AnnotationConfigContextLoader.class, classes = Config.class)
 @JdbcTest
 class ApplicationTest {
 

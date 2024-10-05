@@ -2,14 +2,13 @@ package de.codecentric.app.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
+import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
 
-@org.springframework.context.annotation.Configuration
+@Configuration
 @ComponentScan(basePackages = "de.codecentric.app")
-public class Configuration {
+public class Config {
 
     @Bean
     public DataSource dataSource() {
