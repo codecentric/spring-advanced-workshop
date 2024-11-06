@@ -12,13 +12,12 @@ import org.springframework.stereotype.Component;
 class AuthListener implements ApplicationListener<AbstractAuthenticationEvent> {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
-    
+
     @Override
     public void onApplicationEvent(final AbstractAuthenticationEvent event) {
         if (event instanceof AuthenticationSuccessEvent) {
             logger.info("Authentication successful: {}", event.getAuthentication().getName());
-        }
-        else if (event instanceof AuthenticationFailureBadCredentialsEvent) {
+        } else if (event instanceof AuthenticationFailureBadCredentialsEvent) {
             logger.info("Authentication failure with bad credentials: {}" + event.getAuthentication().getName());
         }
     }

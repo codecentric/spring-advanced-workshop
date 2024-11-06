@@ -6,7 +6,6 @@ import de.codecentric.app.service.FarmerService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.jdbc.JdbcTest;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
@@ -30,7 +29,7 @@ class ApplicationTest {
     }
 
     @Test
-    public void testFindFarmerByLastname(){
+    public void testFindFarmerByLastname() {
         Farmer farmer = this.farmerService.findFarmerByLastName("Bauer");
         assertThat(farmer).isNotNull();
         assertThat(farmer.getFirstname()).isEqualTo("Benjamin");
