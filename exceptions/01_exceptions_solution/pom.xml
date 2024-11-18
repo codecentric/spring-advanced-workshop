@@ -11,8 +11,8 @@
     <groupId>de.codecentric</groupId>
     <artifactId>app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>01_transactions</name>
-    <description>01_transactions</description>
+    <name>01_exceptions_solution</name>
+    <description>01_exceptions_solution</description>
     <url/>
     <licenses>
         <license/>
