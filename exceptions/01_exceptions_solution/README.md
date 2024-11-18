@@ -17,6 +17,13 @@ Exceptions Handlings auf Controller-Ebene.
 Ob du die Aufgaben korrekt gelöst hast, erfährst du, wenn du die Tests in der Klasse `ApplicationTest` ausführst und
 diese erfolgreich durchlaufen.
 
+## Aufgabe 2
+
+Nun soll es darum gehen, dass wir Exceptions behandeln, die spring-spezifisch sind.
+1. Lasse den `GlobalExceptionHandler` die Klasse `ResponseEntityExceptionHandler` erweitern.
+2. Überschreibe die Methode `handleHttpMessageNotReadable()` und gebe neben einer Fehlermeldung den HTTP-Status "400 - Bad Request" zurück.
+3. Schreibe einen Test, der bei der fehlerhaften Eingabe eines Tiertyps den erwarteten HTTP-Status zurückgibt.
+
 ## Bonus
 
 Das Ziel der Bonusaufgabe besteht darin sicherzustellen, dass ein Tier in unserer Verwaltung korrekt angelegt wird.

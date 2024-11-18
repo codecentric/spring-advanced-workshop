@@ -96,6 +96,17 @@ class ApplicationTest {
                 .andExpect(jsonPath("$", is("Animal not found with id 999")));
     }
 
+    // Lösung 2.3
+    @Test
+    public void testHttpMessageNotReadable() throws Exception {
+        String animalJson = "{ \"name\": \"Goldfish\", \"type\": \"FISH\" }";
+        mockMvc.perform(post("/animals")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(animalJson))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$", containsString("Malformed JSON request")));
+    }
+
     // Lösung Bonus.3
     @Test
     public void testInvalidAnimalData() throws Exception {
@@ -107,5 +118,6 @@ class ApplicationTest {
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$", containsString("must not be empty")));
     }
+
 }
 
