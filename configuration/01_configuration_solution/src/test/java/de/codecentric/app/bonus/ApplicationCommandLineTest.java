@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+// Lösung Bonus 1
 @SpringBootTest(args = {"--farm.name=CLI Farm", "--farm.location=CLI Location"})
 public class ApplicationCommandLineTest {
 

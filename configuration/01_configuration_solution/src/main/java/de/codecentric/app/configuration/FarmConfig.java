@@ -6,6 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+// Lösung Aufgabe 1.2
 @ConfigurationProperties(prefix = "farm")
 @Getter
 @Setter

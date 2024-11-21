@@ -22,6 +22,7 @@ class FarmConfigServiceTest {
         assertThat(farmConfigService.getPigs()).isNotNull();
     }
 
+    // Lösung 1.3
     @Test
     void configurationShouldBeDefault() {
         assertThat(farmConfigService.getFarmName()).isEqualTo("Standard Farm");

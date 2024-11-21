@@ -10,6 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.fail;
 
 @SpringBootTest
+// Lösung 3.3
 @ActiveProfiles("prod")
 class FarmEnvironmentServiceTest {
 
@@ -25,6 +26,7 @@ class FarmEnvironmentServiceTest {
         assertThat(farmEnvironmentService.getPigs()).isNotZero();
     }
 
+    // Lösung 3.4
     @Test
     void configurationShouldBeProfileSpecific() {
         assertThat(farmEnvironmentService.getFarmName()).isEqualTo("Prod Farm");

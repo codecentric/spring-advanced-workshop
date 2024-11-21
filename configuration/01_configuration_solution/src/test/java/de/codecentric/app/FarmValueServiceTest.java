@@ -9,6 +9,7 @@ import org.springframework.test.context.ActiveProfiles;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
+// Lösung 2.3
 @ActiveProfiles("dev")
 class FarmValueServiceTest {
 
@@ -24,6 +25,7 @@ class FarmValueServiceTest {
         assertThat(farmValueService.getPigs()).isNotZero();
     }
 
+    // Lösung 2.4
     @Test
     void configurationShouldBeProfileSpecific() {
         assertThat(farmValueService.getFarmName()).isEqualTo("Dev Farm");

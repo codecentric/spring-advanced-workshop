@@ -9,6 +9,7 @@ import org.springframework.test.context.TestPropertySource;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
+// Lösung Bonus 2.2
 @TestPropertySource(properties = {
         "FARM_NAME=ENV Farm",
         "FARM_LOCATION=ENV Location",

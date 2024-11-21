@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class FarmEnvironmentService implements FarmService {
 
+    // Lösung 3.1
     private final Environment environment;
 
     public FarmEnvironmentService(Environment environment) {
