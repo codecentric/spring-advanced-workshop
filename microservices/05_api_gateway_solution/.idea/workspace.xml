@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7feec90e-4954-4d67-9a49-6f47d716425c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="395449c8-cdf2-4285-840a-3240d3eb440b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../02_field_service_solution/src/main/java/de/codecentric/fieldservice/controller/FieldController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_field_service_solution/src/main/java/de/codecentric/fieldservice/model/Field.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_field_service_solution/src/main/java/de/codecentric/fieldservice/repository/FieldRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_field_service_solution/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +27,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/steffischw/spring-advanced-workshop.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:steffischw/spring-advanced-workshop.git&quot;,
     &quot;accountId&quot;: &quot;1827b88e-8344-4916-b4b9-42bcf938bd68&quot;
   }
 }</component>
@@ -35,10 +39,9 @@
     </option>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 4
 }</component>
-  <component name="ProjectId" id="2ms9zqYxwOdVqL5AnOISPSAII65" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2pM3JJWXbEOERxcCUdjwgQ1z0Iz" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,7 +49,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -58,9 +67,20 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="api-gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="de.codecentric.apigateway.ApiGatewayApplication" />
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="05_api_gateway_solution" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="05_api_gateway_solution" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="apigateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="de.codecentric.apigateway.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -69,21 +89,21 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7feec90e-4954-4d67-9a49-6f47d716425c" name="Changes" comment="" />
-      <created>1727854682552</created>
+      <changelist id="395449c8-cdf2-4285-840a-3240d3eb440b" name="Changes" comment="" />
+      <created>1732562045005</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1727854682552</updated>
-      <workItem from="1727854683537" duration="4175000" />
-      <workItem from="1727994792843" duration="600000" />
+      <updated>1732562045005</updated>
+      <workItem from="1732562045998" duration="2092000" />
+      <workItem from="1732607770205" duration="4243000" />
     </task>
     <servers />
   </component>

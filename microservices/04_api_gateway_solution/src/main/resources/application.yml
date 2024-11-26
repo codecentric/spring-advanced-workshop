@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+# Lösung 3.1
+spring:
+  application:
+    name: 04_api_gateway_solution
+  cloud:
+    gateway:
+      routes:
+        - id: field-service
+          uri: lb://field-service
+          predicates:
+            - Path=/fields/**
+        - id: animal-service
+          uri: lb://animal-service
+          predicates:
+            - Path=/animals/**
+        - id: order-service
+          uri: lb://order-service
+          predicates:
+            - Path=/orders/**
