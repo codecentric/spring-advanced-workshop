@@ -32,5 +32,4 @@ public class Config {
         em.afterPropertiesSet();
         return em;
     }
-
 }
