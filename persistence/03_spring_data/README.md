@@ -1,21 +1,21 @@
 # Spring Data JPA
 
-## Task 1
+## Aufgabe 1
 
-1. first we have to make sure that our class `Farmer` is recognised as an entity. To do this, annotate the class
-   with JPA annotations so that it can be persisted.
-2. start the application. Open the H2 console under `localhost:8080/h2-console`. Use the information from the console
-   to find out the correct database URL and the `application.properties` to find out username and password.
+1. Zunächst müssen wir dafür sorgen, dass unsere Klasse `Farmer` als Entität erkannt wird. Annotiere hierfür die Klasse
+   mit JPA-Annotationen, damit sie persistiert werden kann.
+2. Starte die Anwendung. Öffne die H2-Konsole unter `localhost:8080/h2-console`. Nutze die Informationen aus der Konsole
+   um die korrekte Datenbank-URL und die `application.properties` um Username und Password herauszufinden.
 
-If you have annotated the entity correctly, you should find two entries in your database in the `Farmers` table.
+Wenn du die Entity korrekt annotiert hast, solltest du in deiner Datenbank in der Tabelle `Farmers` zwei Einträge finden.
 
-## Task 2
+## Aufgabe 2
 
-1. so that we can use Spring magic to query our database tables, the `FarmerRepository` must inherit from the correct Spring Data JPA interface.
-   correct Spring Data JPA interface.
-2. we want to find individual farmers by searching for their last name. Write a query in the `FarmerRepository`,
-   which returns a farmer for the last name.
-3. write methods in `FarmerService` to query all farmers and to find a farmer with his last name.
+1. Damit wir die Spring-Magie für die Abfrage unserer Datenbanktabellen nutzen können, muss das `FarmerRepository` vom
+   korrekten Spring Data JPA-Interface erben.
+2. Wir wollen einzelne Farmer finden, indem wir nach ihrem Nachnamen suchen. Schreibe im `FarmerRepository` eine Query,
+   welche dir für den Nachnamen einen Farmer zurückgibt.
+3. Schreibe im `FarmerService` Methoden um alle Farmer abzufragen und um einen Farmer mit seinem Nachnamen zu finden.
 
-You can find out whether you have solved the tasks correctly if you execute the tests in the class `ApplicationTest` and run them successfully.
-run them successfully.
+Ob du die Aufgaben korrekt gelöst hast, erfährst du, wenn du die Tests in der Klasse `ApplicationTest` ausführst und
+diese erfolgreich durchlaufen.
