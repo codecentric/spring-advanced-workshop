@@ -68,3 +68,15 @@ Du kannst über das API-Gateway nun auch auf die folgenden Endpunkte zugreifen. 
 
 - http://localhost:8080/fields
 - http://localhost:8080/orders
+
+## Bonus: Dein eigener Microservice
+
+1. Erstelle deinen eigenen Microservice. Erstelle hierfür ein neues Spring-Boot-Projekt mit dem Spring Initalizr. Du kannst dies direkt in IntelliJ nutzen oder du nutzt https://start.spring.io/ und lädst dir das Projekt runter. Du brauchst dafür die Abhängigkeiten zu JPA, Web und Eureka.
+2. Nun kannst du dir überlegen, was dein Microservice machen soll. Vielleicht wird es ein AnimalService, der Tiere auf unserer Farm verwaltet?
+3. Dein Microservice muss nun wissen, wo der Eureka Server liegt, bei dem er sich registrieren kann. Passe die Konfiguration in der `application.yml` an, äquivalent zu den anderen Microservices.
+4. Dein API-Gateway benötigt außerdem die Information darüber, wo er Requests hin routen soll, die an deinen neuen Microservice gehen sollen. Ergänze im API-Gateway eine Route für deinen neuen Service.
+
+Wenn du nun alle deine Komponenten startest, kannst du überprüfen, ob sich dein neuer Microservice am Eureka-Server registriert hat.
+
+Du kannst über das API-Gateway nun auch deinen, im API-Gateway, definierten Endpunkt aufrufen. 
+
